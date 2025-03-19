@@ -52,7 +52,7 @@ export default function About() {
           <center>
           <p className={styles.cta}>
             <strong>Are you ready to challenge yourself?</strong>  
-            Join us at 🎉 Tech Spardha 2K24 and be a part of the 🔮 future of technology!
+            Join us at 🎉 Tech Spardha 2K25 and be a part of the 🔮 future of technology!
           </p>
 
           </center>
