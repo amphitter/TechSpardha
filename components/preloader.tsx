@@ -1,4 +1,5 @@
 // Preloader.tsx
+"use client"
 import { useEffect, useState } from "react";
 import styles from "./preloader.module.css";
 
