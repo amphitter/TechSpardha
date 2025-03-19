@@ -39,7 +39,7 @@
 }
 
 .buttonContainer {
-  display: grid;
+  display: flex;
   gap: 1rem;
   justify-content:center;
   align-item:center;
