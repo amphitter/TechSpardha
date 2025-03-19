@@ -5,7 +5,7 @@ export default function WhyJoin() {
     <section className={styles.whyJoin}>
 
 
-      <h2>Why Join Tech Spardha?</h2>
+      <h2>Why Join Tech स्पर्धा?</h2>
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.icon}>🫂</div>
