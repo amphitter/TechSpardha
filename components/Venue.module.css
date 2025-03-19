@@ -1,61 +1,98 @@
 .venueSection {
-    padding: 4rem 2rem;
-    background:url('/assets/bg-images/tech-bakcground-banner1.png');
-    background-size: cover;
-    color: white;
-  }
-  
-  .subHeading {
-    color:white;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
-  
+  padding: 4rem 2rem;
+  background: url('/assets/bg-images/tech-bakcground-banner1.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.subHeading {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.venueContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.venueDetails h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.venueDetails h2 span {
+  color: orange;
+  font-size: 3rem;
+}
+
+.venueDetails address {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
   .venueContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  
+
   .venueDetails h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
-  
+
   .venueDetails h2 span {
-    color: orange;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  
-  .venueDetails address {
-    font-style: normal;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
+
   .mapContainer {
-    height: 300px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    height: 250px;
   }
-  
-  @media (max-width: 768px) {
-    .venueContent {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    
-    .mapContainer {
-      height: 300px;
-    }
-    
-    .venueDetails h2 {
-      font-size: 2rem;
-    }
+}
+
+@media (max-width: 600px) {
+  .venueSection {
+    padding: 3rem 1rem;
   }
+
+  .subHeading {
+    font-size: 2rem;
+  }
+
+  .venueDetails h2 {
+    font-size: 1.8rem;
+  }
+
+  .venueDetails h2 span {
+    font-size: 2.2rem;
+  }
+
+  .venueDetails address {
+    font-size: 1rem;
+  }
+
+  .mapContainer {
+    height: 220px;
+    max-width: 100%;
+  }
+}
