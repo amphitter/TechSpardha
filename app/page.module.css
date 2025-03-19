@@ -138,12 +138,11 @@
 
   .eventInfo {
     flex-direction: row;
-    gap: 0.3rem;
-    font-size: 0.5rem;
   }
 
   .eventInfo p {
-    font-size: 1rem;
+    gap: 0.3rem;
+    font-size: 0.5rem;
   }
 
   .ctaButton {
