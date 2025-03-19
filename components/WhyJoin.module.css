@@ -1,0 +1,134 @@
+/* WhyJoin.module.css */
+.whyJoin {
+    padding: 6rem 2rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(9, 18, 36, 0.9), rgba(9, 18, 36, 0.9)),
+                url('/assets/bg-images/animatioin7.gif') center/cover;
+    color: white;
+}
+
+.whyJoin h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+    background:linear-gradient(135deg, orange, #ff6b00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    display: inline-block;
+}
+
+.card:hover .icon {
+    transform: scale(1.25) translateY(-5px);
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.2));
+}
+
+.cardTitle {
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cardText {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.card:hover .icon {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .whyJoin {
+        padding: 4rem 1.5rem;
+    }
+    
+    .cardsContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .card {
+        min-height: 260px;
+        padding: 2rem;
+    }
+    
+    .whyJoin h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardText {
+        font-size: 1rem;
+    }
+    
+    .icon {
+        font-size: 3rem;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .icon {
+        transition: none;
+    }
+    
+    .card:hover .icon {
+        animation: none;
+    }
+}

@@ -1,0 +1,98 @@
+/* EventsModal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(184, 184, 184, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  color: #a8b2d1;
+  position: relative;
+}
+
+.eventTitle {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.details {
+  color: #373737;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.buttonContainer {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.downloadButton {
+  background: #64ffda;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.registerButton {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  color: #64ffda;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  transform: rotate(90deg);
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 1.5rem;
+  }
+  
+  .eventTitle {
+    font-size: 1.5rem;
+  }
+  
+  .details {
+    font-size: 1rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+  }
+}

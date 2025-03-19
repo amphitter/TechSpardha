@@ -1,0 +1,76 @@
+/* Stats.module.css */
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(9, 18, 36, 0.95);
+    border-top: 3px solid #ff9800;
+    border-bottom: 3px solid #ff9800;
+}
+
+.statItem {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.statItem h3 {
+    color: #ff9800;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.statItem p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.divider {
+    width: 2px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .statItem {
+        padding: 0 1rem;
+    }
+    
+    .statItem h3 {
+        font-size: 2rem;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .statItem p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        gap: 0.5rem;
+    }
+    
+    .statItem {
+        padding: 0 0.5rem;
+    }
+    
+    .statItem h3 {
+        font-size: 1.75rem;
+    }
+}

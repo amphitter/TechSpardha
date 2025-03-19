@@ -1,0 +1,76 @@
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Reduced gap for smaller screens */
+  padding: 2rem;
+  background: rgba(9, 18, 36, 0.95);
+  border-top: 3px solid #ff9800;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1e2a47;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  min-width: 80px;
+  max-width: 120px;
+  width: 22%; /* Ensures even distribution */
+  text-align: center;
+}
+
+.timeUnit:hover {
+  transform: scale(1.1);
+}
+
+.number {
+  font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive text */
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.label {
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .countdown {
+    gap: 1rem; /* Reduce gap on tablets */
+    padding: 1.5rem;
+  }
+
+  .timeUnit {
+    width: 30%; /* Bigger blocks for better visibility */
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown {
+    flex-direction: row;
+    gap: 0.5rem; /* Compact layout for mobile */
+    padding: 1rem;
+  }
+
+  .timeUnit {
+    width: 45%; /* Makes blocks more readable */
+    padding: 0.6rem;
+  }
+
+  .number {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+  }
+}
