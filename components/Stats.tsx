@@ -1,40 +1,34 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
-import styles from "./Stats.module.css";
+"use client"
+import { useEffect, useRef } from 'react';
+import styles from './Stats.module.css';
 
 export default function Stats() {
-  const [loading, setLoading] = useState(true);
+  const numberRefs = useRef<(HTMLHeadingElement | null)[]>([]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-      const targets = [600, 12, 48];
+    const targets = [600, 12, 48];
+    const startCount = () => {
+      numberRefs.current.forEach((element, index) => {
+        let current = 0;
+        const target = targets[index];
+        const duration = 2500;
+        const increment = target / (duration / 50);
 
-      const startCount = () => {
-        numberRefs.current.forEach((element, index) => {
-          if (!element) return;
-          let current = 0;
-          const target = targets[index];
-          const duration = 2500;
-          const increment = target / (duration / 50);
-
-          const interval = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-              clearInterval(interval);
-              current = target;
-            }
-            element.textContent = Math.ceil(current) + (index === 0 ? "+" : "");
-          }, 50);
-        });
-      };
-
-      startCount();
-    }, 1000); // 1-second delay for preloader
-
-    return () => clearTimeout(timer);
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            clearInterval(timer);
+            current = target;
+          }
+          if (element) {
+            element.textContent = Math.ceil(current) + (index === 0 ? '+' : '');
+          }
+        }, 50);
+      });
+    };
+    
+    startCount();
   }, []);
-
 
   return (
     <section className={styles.stats}>
@@ -54,4 +48,4 @@ export default function Stats() {
       </div>
     </section>
   );
-}
+} 
