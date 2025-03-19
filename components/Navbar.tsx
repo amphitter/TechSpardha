@@ -13,16 +13,16 @@ export default function Navbar() {
   };
   return (
     <nav className={styles.navbar}>
-      <Link href="/">Home</Link>
-      <Link href="#about-us">About</Link>
-      <Link href="#events">Events</Link>
-      <Link href="#venue">Venue</Link>
+      <b><Link href="/">Home</Link></b>
+      <b><Link href="#about-us">About</Link></b>
+      <b><Link href="#events">Events</Link></b>
+      <b><Link href="#venue">Venue</Link></b>
       <a 
         href="https://www.instagram.com/iteamsankalp/" 
         className={styles.communityButton}
       >
         Join Our Community
-      </a>
+      </a></b>
     </nav>
   );
 }
