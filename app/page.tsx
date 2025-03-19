@@ -45,12 +45,12 @@ export default function Home() {
             <center>
               <div className={styles.floatingContainer}>
                 <a 
-                  href="https://forms.gle/eCfEGwoyg7vKpeRB7" 
+                  href="#events" 
                   className={styles.floatingButton}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Register Now
+                  Know More
                 </a>
               </div>
             </center>
