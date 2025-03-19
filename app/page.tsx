@@ -68,9 +68,8 @@ export default function Home() {
         </section>
 
         <WhyJoin />
-
-        <EventsPreview />
         <Countdown />
+        <EventsPreview />
 
         <section id="venue" className={styles.venue}>
         <Venue />
