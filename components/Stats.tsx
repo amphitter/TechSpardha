@@ -11,7 +11,7 @@ export default function Stats() {
       numberRefs.current.forEach((element, index) => {
         let current = 0;
         const target = targets[index];
-        const duration = 1500;
+        const duration = 2500;
         const increment = target / (duration / 50);
 
         const timer = setInterval(() => {
