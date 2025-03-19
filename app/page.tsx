@@ -7,7 +7,7 @@ import WhyJoin from '@/components/WhyJoin';
 import About from '@/components/About';
 import EventsPreview from '@/components/EventsPreview';
 import Venue from '@/components/Venue';
-improt Preloader from '@/components/Preloader';
+import Preloader from '@/components/Preloader';
 import styles from './page.module.css';
 import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
