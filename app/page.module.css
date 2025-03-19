@@ -101,6 +101,7 @@
   text-decoration: none;
   box-shadow: 0 10px 20px rgba(255,107,0,0.3);
   display: flex;
+  justify-item: center;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
