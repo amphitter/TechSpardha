@@ -47,7 +47,6 @@ export default function Home() {
                 <a 
                   href="#events" 
                   className={styles.floatingButton}
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   Know More
