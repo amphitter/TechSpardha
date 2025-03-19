@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Stats.module.css";
 
 export default function Stats() {
-  const numberRefs = useRef<Array<HTMLHeadingElement | null>>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
