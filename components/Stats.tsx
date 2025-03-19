@@ -6,7 +6,7 @@ export default function Stats() {
   const numberRefs = useRef<(HTMLHeadingElement | null)[]>([]);
 
   useEffect(() => {
-    const targets = [400, 11, 24];
+    const targets = [600, 12, 48];
     const startCount = () => {
       numberRefs.current.forEach((element, index) => {
         let current = 0;
