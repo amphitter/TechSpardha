@@ -106,7 +106,7 @@ const allEvents = [
 
 export default function EventsPreview() {
   const [showAll, setShowAll] = useState(false);
-  const visibleEvents = showAll ? allEvents : allEvents.slice(0, 4);
+  const visibleEvents = showAll ? allEvents : allEvents.slice(0, 6);
   const [selectedEvent, setSelectedEvent] = useState<{ id: number; name: string; poster: string; details: string; pdf: string; registerLink: string; } | null>(null);
 
   return (
