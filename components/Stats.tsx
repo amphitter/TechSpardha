@@ -41,17 +41,17 @@ export default function Stats() {
   return (
     <section className={styles.stats}>
       <div className={styles.statItem}>
-        <h3 ref={(el) => (numberRefs.current[0] = el)}>0</h3>
+        <h3 ref={(el) => { numberRefs.current[0] = el; }}>0</h3>
         <p>Participants</p>
       </div>
       <div className={styles.divider}></div>
       <div className={styles.statItem}>
-        <h3 ref={(el) => (numberRefs.current[1] = el)}>0</h3>
+        <h3 ref={(el) => { numberRefs.current[1] = el; }}>0</h3>
         <p>Activities</p>
       </div>
       <div className={styles.divider}></div>
       <div className={styles.statItem}>
-        <h3 ref={(el) => (numberRefs.current[2] = el)}>0</h3>
+        <h3 ref={(el) => { numberRefs.current[2] = el; }}>0</h3>
         <p>Hours</p>
       </div>
     </section>
