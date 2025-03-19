@@ -17,7 +17,7 @@ export default function Navbar() {
       <b><Link href="#about-us">About</Link></b>
       <b><Link href="#events">Events</Link></b>
       <b><Link href="#venue">Venue</Link></b>
-      <a 
+      <b><a 
         href="https://www.instagram.com/iteamsankalp/" 
         className={styles.communityButton}
       >
