@@ -119,6 +119,11 @@
     .highlight {
         font-size: 1.1rem;
     }
+    .about h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 }
 
 @media (hover: hover) {
