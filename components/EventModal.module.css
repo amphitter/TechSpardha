@@ -42,6 +42,7 @@
   display: grid;
   gap: 1rem;
   justify-content:center;
+  align-item:center;
   margin-top: 2rem;
 }
 
