@@ -35,7 +35,6 @@ export default function Stats() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return null;
 
   return (
     <section className={styles.stats}>
