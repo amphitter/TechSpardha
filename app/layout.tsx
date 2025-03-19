@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Tech Spardha - GITM',
+  title: 'Tech स्पर्धा - GITM',
   description: 'Annual Tech Fest of GITM',
 };
 
