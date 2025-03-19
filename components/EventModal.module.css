@@ -41,6 +41,7 @@
 .buttonContainer {
   display: grid;
   gap: 1rem;
+  justify-content:center;
   margin-top: 2rem;
 }
 
