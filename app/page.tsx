@@ -13,8 +13,8 @@ import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Home() {
   return (
-    <Preloader />
     <>
+          <Preloader />
       <Navbar />
       
       <main className={styles.main}>
