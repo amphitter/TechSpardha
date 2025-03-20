@@ -36,14 +36,6 @@ export default function EventCard({ poster, name, onViewDetails }: EventCardProp
           >
             Details
           </button>
-          <a 
-            href="#register"
-            className={styles.registerButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Register
-          </a>
         </div>
       </div>
     </article>
