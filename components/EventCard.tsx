@@ -31,7 +31,7 @@ export default function EventCard({ poster, name, onViewDetails }: EventCardProp
         <div className={styles.buttonGroup}>
           <button 
             onClick={onViewDetails}
-            className={styles.detailsButton}
+            className={styles.registerButton}
             aria-label={`View details for ${name}`}
           >
             Details
