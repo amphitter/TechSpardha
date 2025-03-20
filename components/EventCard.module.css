@@ -64,11 +64,10 @@
 .detailsButton {
   background: linear-gradient(135deg, orange, #ff6b00);
   color: hsl(0, 100%, 97%);
-  border: 2px solid #ffffff;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 2rem;
   border-radius: 30px;
-  font-weight: 600;
   flex: 1;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
