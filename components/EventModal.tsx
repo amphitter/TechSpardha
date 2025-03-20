@@ -24,9 +24,6 @@ export default function EventModal({ event, onClose }: EventModalProps) {
           <a href={`/assets/Rules_Of_The_Event/${event.pdf}`} target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
             Download Rules
           </a>
-          <a href={event.registerLink} target="_blank" rel="noopener noreferrer" className={styles.registerButton}>
-            Register Now
-          </a>
         </div>
 
         <button className={styles.closeButton} onClick={onClose}>
