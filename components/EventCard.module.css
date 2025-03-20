@@ -62,8 +62,8 @@
 }
 
 .detailsButton {
-  background: rgba(100, 255, 218, 0.1);
-  color: #ffffff;
+  background: linear-gradient(135deg, orange, #ff6b00);
+  color: hsl(0, 100%, 97%);
   border: 2px solid #ffffff;
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
