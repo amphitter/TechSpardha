@@ -21,8 +21,8 @@ export default function Footer() {
       <div className={styles.credits}>
         <p>&copy; 2025 Techस्पर्धा, GITM. All rights reserved.</p>
         <p className={styles.developers}>
-          Developed by <a href="https://github.com/amphitter/" target="_blank" rel="noopener noreferrer">
-            <FaGithub /> </a> <a href="https://www.linkedin.com/in/devansh-singh-amphitter/">Team Sankalp</a></p>
+          Developed by <a href="https://github.com/iteamsankalp/" target="_blank" rel="noopener noreferrer">
+            <FaGithub /> </a> <a href="https://www.linkedin.com/in/iteamsankalp/">Team Sankalp</a></p>
       </div>
     </footer>
   );
