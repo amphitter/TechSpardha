@@ -47,11 +47,11 @@ export default function Home() {
             <center>
               <div className={styles.floatingContainer}>
                 <a 
-                  href="#events" 
+                  href="https://unstop.com/events/tech-competition-2k25-global-institute-of-technology-management-gitm-farrukhnagar-gurgaon-haryana-1435869" 
                   className={styles.floatingButton}
                   rel="noopener noreferrer"
                 >
-                  Know More
+                  Register Now
                 </a>
               </div>
             </center>
