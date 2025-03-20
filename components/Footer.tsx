@@ -22,8 +22,7 @@ export default function Footer() {
         <p>&copy; 2025 Techस्पर्धा, GITM. All rights reserved.</p>
         <p className={styles.developers}>
           Developed by <a href="https://github.com/amphitter/" target="_blank" rel="noopener noreferrer">
-            <FaGithub /> </a> <a href="https://www.linkedin.com/in/devansh-singh-amphitter/">Devansh </a> and <a href="https://github.com/manya04092005" target="_blank" rel="noopener noreferrer"> <FaGithub /></a><a href="https://www.linkedin.com/in/manya-kanojia-7a0334290/"> Manya</a>
-        </p>
+            <FaGithub /> </a> <a href="https://www.linkedin.com/in/devansh-singh-amphitter/">Team Sankalp</a></p>
       </div>
     </footer>
   );
