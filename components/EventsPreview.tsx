@@ -47,7 +47,7 @@ const allEvents = [
 },  
 { 
     id: 6, 
-    name: 'Business and Technical Talks', 
+    name: 'Business Quiz', 
     poster: 'business-talks.jpg', 
     details: 'An insightful event where experts from the industry share knowledge on the latest trends in business and technology. Attendees will gain valuable perspectives on innovation, entrepreneurship, and career growth from experienced professionals.', 
     pdf: 'talks-rules.pdf', 
