@@ -37,7 +37,7 @@ export default function Home() {
               <div className={styles.eventInfo}>
                 <p>
                   <FaCalendarAlt className={styles.icon} />
-                  28th - 29th March 2025
+                  27th - 28th March 2025
                 </p>
                 <p>
                   <FaMapMarkerAlt className={styles.icon} />
