@@ -47,7 +47,7 @@ export default function Home() {
             <center>
               <div className={styles.floatingContainer}>
                 <a 
-                  href="https://unstop.com/events/tech-competition-2k25-global-institute-of-technology-management-gitm-farrukhnagar-gurgaon-haryana-1435869" 
+                  href="https://linktr.ee/iteamsankalp" 
                   className={styles.floatingButton}
                   rel="noopener noreferrer"
                 >
